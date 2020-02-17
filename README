@@ -5,8 +5,13 @@ Open API - 주로 웹 API또는 API라고 함
 
 
 Building a weather app using Openweathermap(OpenAPI 제공) and Flask (웹응용 프래임워크)
-
+- Get your api key and test the openAPI
+http://api.openweathermap.org/data/2.5/weather?q=city_name&APPID=your_api_key
+- Write a Flask app 
 $ python3 weather_app.py
+- Access the app
 http://127.0.0.1:5000/city?q=kathmandu
+
+git clone https://github.com/sagunsh/weather-app.git
 
 [REF] https://towardsdatascience.com/building-a-weather-app-using-openweathermap-and-flask-ed7402239d83
