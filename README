@@ -2,3 +2,11 @@ Open API - 주로 웹 API또는 API라고 함
   - HTTP를 통해 데이터를 요청하며 주로 XML 이나 JSON 형식으로 응답
   - 최근에는 JSON 방식의 응답을 하는 API가 빠르게 늘어나고 있음 
   - 필요한 자료만을 표준데이터 형식으로 제공하기 위해 사용함 음
+
+
+Building a weather app using Openweathermap(OpenAPI 제공) and Flask (웹응용 프래임워크)
+
+$ python3 weather_app.py
+http://127.0.0.1:5000/city?q=kathmandu
+
+[REF] https://towardsdatascience.com/building-a-weather-app-using-openweathermap-and-flask-ed7402239d83
