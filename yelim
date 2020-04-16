@@ -1,0 +1,23 @@
+import httplib2
+import json
+
+api_key = '&APPID=428373495587e4c1f11889198da333d4'
+url='http://api.openweathermap.org/data/2.5/weather?q='
+
+
+city =['Seoul','Tokyo','London','newyork','paris','Sydney','Nairobi']
+
+for i in range(0,7):
+    print((i+1),':',city[i])
+
+num = int(input("Enter the city number:"))
+f_url = uli + city[num-1] +api_key
+
+
+h = httplib2.Http()
+response,content = h.request(f_url,'GET')
+result = json.loads(content)
+
+print("\n" + "City name:"+ result['name'])
+print("Weather :" + result['weather'][0]['main'])
+print("Temperature : " +str(result['main']['temp']) + "C")
